@@ -1,0 +1,61 @@
+{
+  "name": "chicken-nugget",
+  "displayName": "Chicken Nugget",
+  "description": "VS Code extension for searching keywords and customizing themes",
+  "icon": "images/chicken-nuggets-illustration-concept-in-cartoon-style-free-vector.jpeg",
+  "publisher": "Aiko",
+  "keywords": [
+    "chicken",
+    "nugget",
+    "themes",
+    "theme",
+    "syntax",
+    "highlighting",
+    "search",
+    "customization"
+  ],
+  "preview": true,
+  "galleryBanner": {
+    "color": "#EFD9DC",
+    "theme": "dark"
+  },
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Aiko002/chicken-nugget.git"
+},
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.chickenNugget",
+        "title": "Chicken Nugget: Search Keyword"
+      },
+      {
+        "command": "extension.applyCustomTheme",
+        "title": "Chicken Nugget: Apply Custom Theme"
+      },
+      {
+        "command": "extension.applyCustomColors",
+        "title": "Chicken Nugget: Apply Custom Syntax Highlighting"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}
